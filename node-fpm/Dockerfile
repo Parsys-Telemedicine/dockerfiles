@@ -2,6 +2,6 @@ FROM node
 
 RUN apt -qq update \
  && apt -qq upgrade -y \
- && apt -qq install -y ruby-dev \
+ && apt -qq install -y ruby-dev rubygems \
  && rm -rf /var/lib/apt/lists/* \
  && gem install fpm
