@@ -1,6 +1,6 @@
 FROM node
 
-RUN dpkg --add-architecture i386
+RUN dpkg --add-architecture i386 \
  && apt -qq update \
  && apt -qq upgrade -y \
  && apt -qq install -y nsis wine wine32 \
