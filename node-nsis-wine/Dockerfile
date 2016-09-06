@@ -1,6 +1,7 @@
 FROM node
 
-RUN apt -qq update \
+RUN dpkg --add-architecture i386
+ && apt -qq update \
  && apt -qq upgrade -y \
- && apt -qq install -y nsis wine \
+ && apt -qq install -y nsis wine wine32 \
  && rm -rf /var/lib/apt/lists/*
