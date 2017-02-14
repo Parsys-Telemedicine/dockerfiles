@@ -5,4 +5,6 @@ RUN apt update \
  && apt upgrade -y \
  && apt install -y python python-pip \
  && rm -rf /var/lib/apt/lists/* \
- && pip2 -q --no-cache-dir install -U setuptools
+ && pip2 -q --no-cache-dir install -U pip wheel setuptools \
+ && pip -q install supervisor \
+ && pip3 -q --no-cache-dir install -U pip wheel setuptools
