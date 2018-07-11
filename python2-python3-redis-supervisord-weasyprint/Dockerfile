@@ -7,4 +7,4 @@ RUN apt update \
  && rm -rf /var/lib/apt/lists/* \
  && pip2 -q --no-cache-dir install -U pip wheel setuptools \
  && pip2 -q install supervisor \
- && pip3 -q --no-cache-dir install -U pip wheel setuptools
+ && pip -q --no-cache-dir install -U pip wheel setuptools
