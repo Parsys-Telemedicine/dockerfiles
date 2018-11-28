@@ -1,4 +1,4 @@
-FROM python:2
+FROM python:3
 
 RUN apt -qq update \
  && apt -qq upgrade -y \
