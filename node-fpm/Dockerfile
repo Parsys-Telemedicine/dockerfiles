@@ -1,4 +1,4 @@
-FROM node
+FROM node:10
 
 RUN apt -qq update \
  && apt -qq upgrade -y \
