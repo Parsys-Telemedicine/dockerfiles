@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 
 # Install python3, pip, redis-server, weasyprint dependencies then update pip and setuptools.
 RUN apt update \
