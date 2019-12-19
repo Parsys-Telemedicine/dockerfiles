@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM node:10
 
 # Install python3 and pip then update pip and setuptools.
 RUN apt update
