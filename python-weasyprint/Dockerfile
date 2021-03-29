@@ -1,5 +1,8 @@
 FROM ubuntu:focal
 
+# libpangocairo-1.0-0 depends on tzdata.
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install python3, pip, weasyprint dependencies then update pip and setuptools.
 RUN apt update
 RUN apt upgrade -y
